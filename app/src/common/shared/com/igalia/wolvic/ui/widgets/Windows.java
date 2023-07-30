@@ -375,6 +375,8 @@ public class Windows implements TrayListener, TopBarWidget.Delegate, TitleBarWid
         WindowWidget rightWindow = getRightWindow();
 
         aWindow.hidePanel();
+        aWindow.hideDownloadsPanel();
+        aWindow.hideWebAppsPanel();
 
         if (leftWindow == aWindow) {
             removeWindow(leftWindow);
@@ -600,10 +602,35 @@ public class Windows implements TrayListener, TopBarWidget.Delegate, TitleBarWid
         }
     }
 
+    private void closeAllPanelsInFocusedWindowIfNeeded() {
+        closeLibraryPanelInFocusedWindowIfNeeded();
+        closeDownloadsPanelInFocusedWindowIfNeeded();
+        closeWebAppsPanelInFocusedWindowIfNeeded();
+        closeAddonsPanelInFocusedWindowIfNeeded();
+    }
+
     private void closeLibraryPanelInFocusedWindowIfNeeded() {
         if (!mFocusedWindow.isLibraryVisible())
             return;
         mFocusedWindow.switchPanel(NONE);
+    }
+
+    private void closeDownloadsPanelInFocusedWindowIfNeeded() {
+        if (!mFocusedWindow.isDownloadsVisible())
+            return;
+        mFocusedWindow.switchDownloadsPanel();
+    }
+
+    private void closeWebAppsPanelInFocusedWindowIfNeeded() {
+        if (!mFocusedWindow.isWebAppsVisible())
+            return;
+        mFocusedWindow.switchWebAppsPanel();
+    }
+
+    private void closeAddonsPanelInFocusedWindowIfNeeded() {
+        if (!mFocusedWindow.isAddonsVisible())
+            return;
+        mFocusedWindow.switchAddonsPanel();
     }
 
     public void enterPrivateMode() {
@@ -616,7 +643,7 @@ public class Windows implements TrayListener, TopBarWidget.Delegate, TitleBarWid
             mRegularWindowPlacement = mFocusedWindow.getWindowPlacement();
             // Make sure we close the library before entering private mode. Otherwise we would
             // get a EGL crash in Gecko.
-            closeLibraryPanelInFocusedWindowIfNeeded();
+            closeAllPanelsInFocusedWindowIfNeeded();
         } else {
             mRegularWindowPlacement = WindowPlacement.FRONT;
         }
@@ -661,7 +688,7 @@ public class Windows implements TrayListener, TopBarWidget.Delegate, TitleBarWid
             mPrivateWindowPlacement = mFocusedWindow.getWindowPlacement();
             // Make sure we close the library before exiting private mode. Otherwise we would
             // get a EGL crash in Gecko.
-            closeLibraryPanelInFocusedWindowIfNeeded();
+            closeAllPanelsInFocusedWindowIfNeeded();
         } else {
             mPrivateWindowPlacement = WindowPlacement.FRONT;
         }
@@ -1162,12 +1189,17 @@ public class Windows implements TrayListener, TopBarWidget.Delegate, TitleBarWid
 
     @Override
     public void onLibraryClicked() {
-        if (mDownloadsManager.isDownloading()) {
-            mFocusedWindow.switchPanel(Windows.DOWNLOADS);
+        mFocusedWindow.switchPanel(Windows.NONE);
+    }
 
-        } else {
-            mFocusedWindow.switchPanel(Windows.NONE);
-        }
+    @Override
+    public void onDownloadsClicked() {
+        mFocusedWindow.switchDownloadsPanel();
+    }
+
+    @Override
+    public void onWebAppsClicked() {
+        mFocusedWindow.switchWebAppsPanel();
     }
 
     @Override
@@ -1679,7 +1711,7 @@ public void selectTab(@NonNull Session aTab) {
     }
 
     public boolean isSessionFocused(@NonNull Session session) {
-        return mRegularWindows.stream().anyMatch(window -> window.getSession() == session && !window.isLibraryVisible() && session.isPrivateMode() == mPrivateMode) ||
-                mPrivateWindows.stream().anyMatch(window -> window.getSession() == session && !window.isLibraryVisible() && session.isPrivateMode() == mPrivateMode );
+        return mRegularWindows.stream().anyMatch(window -> window.getSession() == session && !window.isLibraryVisible() && !window.isDownloadsVisible() && !window.isWebAppsVisible() && session.isPrivateMode() == mPrivateMode) ||
+                mPrivateWindows.stream().anyMatch(window -> window.getSession() == session && !window.isLibraryVisible() && !window.isDownloadsVisible() && !window.isWebAppsVisible() && session.isPrivateMode() == mPrivateMode );
     }
 }
