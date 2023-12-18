@@ -104,15 +104,70 @@ public class ChromiumPermissionDelegate implements PermissionManagerBridge.Deleg
         });
     }
 
+    private WResult<PermissionManagerBridge.PermissionStatus> requestAndroidPermission(
+            String androidPermission) {
+        if (androidPermission.equals(PermissionManagerBridge.NO_ANDROID_PERMISSION)) {
+            return WResult.fromValue(PermissionManagerBridge.PermissionStatus.ALLOW);
+        }
+
+        WResult<PermissionManagerBridge.PermissionStatus> result = WResult.create();
+        mPermissionDelegate.onAndroidPermissionsRequest(mSession, new String[]{androidPermission}, new WSession.PermissionDelegate.Callback() {
+            @Override
+            public void grant() {
+                result.complete(PermissionManagerBridge.PermissionStatus.ALLOW);
+            }
+
+            @Override
+            public void reject() {
+                result.complete(PermissionManagerBridge.PermissionStatus.DENY);
+            }
+        });
+        return result;
+    }
+
+    /**
+     * Iterates over androidPermissions and starts an android permission dialog for each permission.
+     * @param currentPermission index of the permission processed on this step
+     * @param currentResults accumulated permission results for already processed permissions
+     */
+    private WResult<List<PermissionManagerBridge.PermissionStatus>> requestAndroidPermissions(
+            String[] androidPermissions,
+            int currentPermission,
+            List<PermissionManagerBridge.PermissionStatus> currentResults) {
+        if (currentPermission == androidPermissions.length) {
+            return WResult.fromValue(currentResults);
+        }
+
+        return requestAndroidPermission(androidPermissions[currentPermission]).then(status -> {
+            currentResults.add(status);
+            return requestAndroidPermissions(androidPermissions, currentPermission + 1,
+                    currentResults);
+        });
+    }
+
+    private void invokeCallback(List<PermissionManagerBridge.PermissionStatus> statuses,
+                           PermissionManagerBridge.PermissionCallback callback) {
+        PermissionManagerBridge.PermissionStatus[] result = Objects.requireNonNull(statuses).toArray(
+                new PermissionManagerBridge.PermissionStatus[statuses.size()]);
+        callback.onPermissionResult(result);
+    }
+
     @Override
     public void onPermissionRequest(PermissionManagerBridge.PermissionType[] permissionTypes,
                                     String url,
                                     boolean isOffTheRecord,
                                     PermissionManagerBridge.PermissionCallback permissionCallback) {
         requestPermissions(permissionTypes, url, isOffTheRecord, 0, new ArrayList<>()).then(statuses -> {
-            PermissionManagerBridge.PermissionStatus[] result = Objects.requireNonNull(statuses).toArray(
-                    new PermissionManagerBridge.PermissionStatus[permissionTypes.length]);
-            permissionCallback.onPermissionResult(result);
+            invokeCallback(statuses, permissionCallback);
+            return null;
+        });
+    }
+
+    @Override
+    public void onAndroidPermissionRequest(String[] androidPermissions,
+                                           PermissionManagerBridge.PermissionCallback callback) {
+        requestAndroidPermissions(androidPermissions, 0, new ArrayList<>()).then(statuses -> {
+            invokeCallback(statuses, callback);
             return null;
         });
     }
