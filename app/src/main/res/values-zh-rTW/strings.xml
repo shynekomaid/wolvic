@@ -689,7 +689,6 @@
     <!-- This string is displayed in the voice-search dialog box that is shown to the user when they press the
          button used to initiate Voice Input. -->
     <string name="voice_input_start">您想輸入何種內容？</string>
-
     <!-- This string is displayed in the voice-search dialog box that is shown to the user when they press the
          button used to initiate Voice Search. -->
     <string name="voice_search_example">範例: 可說「360 度影片、天氣、新聞…」</string>
@@ -748,7 +747,6 @@
     <string name="video_mode_3d_side">3D 子母畫面</string>
     <!-- This string is displayed when selecting a video playback mode. -->
     <string name="video_mode_3d_top_bottom">3D 上下畫面</string>
-
     <!-- This string is displayed when selecting a video playback mode. -->
     <string name="video_mode_360">360</string>
     <!-- This string is displayed when selecting a video playback mode. -->
@@ -1447,7 +1445,6 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <!-- This string is displayed inside the Hamburger menu at the right of the navigation bar. When clicked
          it opens the find in page option -->
     <string name="hamburger_menu_find_in_page">在網頁中尋找</string>
-
     <!-- This string is displayed inside the Hamburger menu at the right of the navigation bar. When clicked
          it opens the addons panel -->
     <string name="hamburger_menu_addons">附加元件</string>
@@ -1667,7 +1664,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="settings_language_portuguese_br">葡萄牙語（巴西）</string>
     <string name="voice_search_server_error">現在不能使用語音搜尋服務。</string>
     <string name="settings_terms_service">服務條款</string>
-    <string name="settings_language_choose_language_voice_search_service_description">選擇你偏好的線上語音搜尋服務</string>
+    <string name="settings_language_choose_language_voice_search_service_description">選擇你偏好的線上語音搜尋服務.</string>
     <string name="settings_privacy_choose_search_engine_description">選擇你喜歡的搜尋引擎。</string>
     <string name="settings_language_choose_language_voice_search_service_title">語音搜尋服務</string>
     <string name="settings_language_galician">加利西亞語</string>
@@ -1675,4 +1672,98 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="settings_privacy_choose_search_engine_reset">重置搜尋引擎設定</string>
     <string name="settings_privacy_search_engine_title">搜尋引擎</string>
     <string name="addons_experimental_section_title">實驗性的</string>
+    <string name="privacy_policy_subtitle_2">資料保護</string>
+    <string name="privacy_policy_subtitle_3">適用法律和原文語言</string>
+    <string name="external_open_uri_error_bad_uri_body">無效的网址%1$s</string>
+    <string name="terms_service_title">服務條款</string>
+    <string name="user_feedback_tooltip">分享想法和回饋</string>
+    <string name="web_apps_loading">載入網頁應用程式</string>
+    <string name="web_apps_dialog_body">您想安裝以下 Web 應用程式嗎？它將在库中提供。</string>
+    <string name="web_apps_dialog_cancel">取消</string>
+    <string name="web_apps_saved_notification">新增了網頁應用程式！</string>
+    <string name="download_addon_install">安裝插件</string>
+    <string name="privacy_dialog_disagree">關閉Wolvic</string>
+    <string name="voice_service_metkai">MeetKai</string>
+    <string name="web_apps_dialog_title_parameter">安裝 %1$s</string>
+    <string name="deprecated_version_dialog_info_button">了解更多…</string>
+    <string name="deprecated_version_dialog_store_button">安裝…</string>
+    <string name="rCN_first_launch_title">用戶協議及隱私權政策通知</string>
+    <string name="rCN_first_launch_clickable_terms_text">使用者協定</string>
+    <string name="rCN_first_launch_clickable_privacy_text">隱私權政策</string>
+    <string name="rCN_first_launch_agree">同意</string>
+    <string name="privacy_policy_subtitle_1">基本資訊</string>
+    <string name="keyboardview_keycode_alt">替代键</string>
+    <string name="web_apps_title">網路應用程式</string>
+    <string name="web_apps_dialog_title">安裝網路應用程式</string>
+    <string name="hamburger_menu_save_web_app">儲存網頁應用程式…</string>
+    <string name="download_addon_install_cancel">取消</string>
+    <string name="notifications_title">通知</string>
+    <string name="notifications_loading">載入通知</string>
+    <string name="security_options_permission_fine_location_warning">Wolvic 只能取得您的大概位置。這可以在系統設定中更改。</string>
+    <string name="web_apps_description">當您位於頁面上時，請按一下「儲存 Web 應用程式...」按鈕，將其新增至您的 Web 應用程式。</string>
+    <string name="web_apps_empty">您的網頁應用程式清單為空</string>
+    <string name="web_apps_dialog_install">安裝</string>
+    <string name="language_options_voice_search_service_title">語音搜尋服務</string>
+    <string name="hamburger_menu_toggle_passthrough">直通</string>
+    <string name="deprecated_version_dialog_title">支持即將結束</string>
+    <string name="download_addon_install_confirm_install">安裝</string>
+    <string name="download_addon_install_blocked">本地插件安裝被阻止</string>
+    <string name="external_open_uri_error_security_exception_body">啟動%1$s的意圖時出現</string>
+    <string name="rCN_first_launch_disagree">不同意</string>
+    <string name="rCN_first_launch_confirmation_body">如果您選擇“不同意”，很遺憾我們將無法再為您提供服務。
+\n
+\n您可以閱讀完整的使用者協議和隱私權政策。</string>
+    <string name="rCN_first_launch_confirmation_agree">同意並繼續</string>
+    <string name="rCN_first_launch_confirmation_disagree">不同意並退出</string>
+    <string name="hvr_connect_glass_message">連接您的 HUAWEI VR Glass 使用此應用程式</string>
+    <string name="privacy_dialog_title">隱私</string>
+    <string name="keyboardview_keycode_cancel">取消</string>
+    <string name="keyboardview_keycode_delete">刪除</string>
+    <string name="keyboardview_keycode_done">完畢</string>
+    <string name="keyboardview_keycode_mode_change">模式變更</string>
+    <string name="keyboardview_keycode_shift">Shift键</string>
+    <string name="keyboardview_keycode_enter">回车鍵</string>
+    <string name="settings_language_portuguese">葡萄牙語</string>
+    <string name="privacy_policy_section_1">此應用程式由 Igalia, SL（以下簡稱 IGALIA）開發，註冊辦事處位於 Bugallal Marchesi, 22 – 1°, 15008, A Coruña, Galicia (Spain)，其聯絡方式為：
+\n
+\n\t• 電話號碼 +34 981 913991;
+\n\t• 電子郵件: info@igalia.com
+\n
+\n構成該應用程式的內容和元素已由 IGALIA 根據開源許可證實施和/或開發，並不受限制地受到西班牙王國的智慧財產權和工業產權法以及可能存在的國際條約和協議的保護。</string>
+    <string name="permissions_dialog_remember_choice">記住這個決定</string>
+    <string name="privacy_dialog_agree">同意</string>
+    <string name="hvr_enter_vr">進入虛擬現實</string>
+    <string name="voice_search_unsupported">您的語言不支援語音搜尋。</string>
+    <string name="notifications_empty">您的通知清單為空</string>
+    <string name="upload_list_empty">沒有可供上傳的文件</string>
+    <string name="terms_service_subtitle_2">Wolvic 網路為基礎的資訊服務</string>
+    <string name="download_addon_install_blocked_body">允許在開發人員選項中繼續進行本機插件安裝。</string>
+    <string name="external_open_uri_error_title">開啟外部應用程式時出錯</string>
+    <string name="language_service_options_reset">重置語音搜尋服務設置</string>
+    <string name="deprecated_version_dialog_body">Wolvic 的本「App Lab」版本很快就會被刪除。
+\n
+\n請從 Meta Store 安裝最新版本的 Wolvic。
+\n
+\n重要提示：除非您使用同步，否則新的 Wolvic 應用程式將不會有您的書籤和選項卡。</string>
+    <string name="external_open_uri_error_no_activity_body">找不到可以處理%1$s的應用程式</string>
+    <string name="rCN_first_launch_body">歡迎來到“Wolvic”!
+\n
+\n註冊和使用「Wolvic」需要您同意《使用者協議》和《隱私權政策》，否則我們無法為您提供服務。請仔細閱讀文件並點擊「同意」繼續。如果您點擊“不同意”，您將無法繼續使用“Wolvic”。
+\n
+\n您可以閱讀完整的使用者協議和隱私權政策。</string>
+    <string name="privacy_dialog_message">你的隱私對我們很重要。為了運行瀏覽器，請接受我們的服務條款和隱私權政策。感謝您使用Wolvic！</string>
+    <string name="privacy_policy_title">隱私權政策</string>
+    <string name="terms_service_section_1">Wolvic 是免費的開源軟體，由來自世界各地的數千名社群建構。您應該了解以下幾點：
+\n
+\n\t•Wolvic 是根據 Mozilla 公共授權的條款向您提供的。這意味著您可以使用、複製 Wolvic 並將其分發給其他人。也歡迎您根據需要修改 Wolvic 的原始碼。 Mozilla 公共授權也賦予您分發修改版本的權利。
+\n
+\n\t• 您未被授予 Igalia 或任何一方的任何商標權或商標許可，包括但不限於 Wolvic 名稱或標誌。
+\n
+\n\t• Wolvic 中的某些功能（例如崩潰報告器）可讓您選擇向 Igalia 提供回饋。選擇提交回饋，即表示您授予 Igalia 使用回饋來改善其產品、在其網站上發布匿名回饋以及分發匿名回饋的權限。
+\n
+\n\t• Wolvic 隱私權政策中描述了我們如何使用您透過 Wolvic 提交給 Igalia 的個人資訊和回饋。
+\n
+\n\t• Wolvic 的一些功能是利用網路為基礎的資訊服務；但是，我們不能保證它們 100% 準確或沒有錯誤。更多詳細信息，包括有關如何停用使用這些服務的功能的信息，可以在服務條款（如下）中找到。</string>
+    <string name="privacy_policy_section_3">本隱私權政策受西班牙法律管轄。該應用程式的隱私權政策語言是西班牙語。因此，西班牙語原始版本與其翻譯成其他語言之間的任何可能的差異都將被視為西班牙語版本中的主要差異，可以在此處找到：https://wolvic.com/es/legal/privacy /。</string>
+    <string name="voice_service_huawei_asr">華為自動語音識別</string>
 </resources>
