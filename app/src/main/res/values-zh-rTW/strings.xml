@@ -1662,7 +1662,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="settings_language_portuguese_br">葡萄牙語（巴西）</string>
     <string name="voice_search_server_error">現在不能使用語音搜尋服務。</string>
     <string name="settings_terms_service">服務條款</string>
-    <string name="settings_language_choose_language_voice_search_service_description">選擇你偏好的線上語音搜尋服務.</string>
+    <string name="settings_language_choose_language_voice_search_service_description">選擇你偏好的線上語音搜尋服務。</string>
     <string name="settings_privacy_choose_search_engine_description">選擇你喜歡的搜尋引擎。</string>
     <string name="settings_language_choose_language_voice_search_service_title">語音搜尋服務</string>
     <string name="settings_language_galician">加利西亞語</string>
@@ -1731,7 +1731,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="permissions_dialog_remember_choice">記住這個決定</string>
     <string name="privacy_dialog_agree">同意</string>
     <string name="hvr_enter_vr">進入虛擬現實</string>
-    <string name="voice_search_unsupported">您的語言不支援語音搜尋。</string>
+    <string name="voice_search_unsupported">你的語言不支持語音搜尋服務</string>
     <string name="notifications_empty">您的通知清單為空</string>
     <string name="upload_list_empty">沒有可供上傳的文件</string>
     <string name="terms_service_subtitle_2">Wolvic 網路為基礎的資訊服務</string>
