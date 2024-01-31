@@ -1731,7 +1731,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="permissions_dialog_remember_choice">記住這個決定</string>
     <string name="privacy_dialog_agree">同意</string>
     <string name="hvr_enter_vr">進入虛擬現實</string>
-    <string name="voice_search_unsupported">你的語言不支持語音搜尋服務</string>
+    <string name="voice_search_unsupported">你的語言不支持語音搜尋服務。</string>
     <string name="notifications_empty">您的通知清單為空</string>
     <string name="upload_list_empty">沒有可供上傳的文件</string>
     <string name="terms_service_subtitle_2">Wolvic 網路為基礎的資訊服務</string>
@@ -1764,14 +1764,15 @@ the Select` button. When clicked it closes all the previously selected tabs -->
 \n\t• Wolvic 的一些功能是利用網路為基礎的資訊服務；但是，我們不能保證它們 100% 準確或沒有錯誤。更多詳細信息，包括有關如何停用使用這些服務的功能的信息，可以在服務條款（如下）中找到。</string>
     <string name="privacy_policy_section_3">本隱私權政策受西班牙法律管轄。該應用程式的隱私權政策語言是西班牙語。因此，西班牙語原始版本與其翻譯成其他語言之間的任何可能的差異都將被視為西班牙語版本中的主要差異，可以在此處找到：https://wolvic.com/es/legal/privacy /。</string>
     <string name="voice_service_huawei_asr">華為自動語音識別</string>
-    <string name="terms_service_section_2">"Wolvic 使用網路為基礎的資訊服務（「服務」）來提供一些功能，請您根據下述條款使用此二進位版本的 Wolvic。
+    <string name="terms_service_section_2">Wolvic 使用網路為基礎的資訊服務（「服務」）來提供一些功能，請您根據下述條款使用此二進位版本的 Wolvic。
 \n
-\n\t•Igalia 及其貢獻者、授權人和合作夥伴致力於提供最準確和最新的服務。然而，我們不能保證這些資訊是全面且無錯誤的。例如，安全瀏覽服務可能無法識別一些有風險的網站，並且可能會錯誤地識別一些安全網站，而在位置感知服務中，我們的服務提供者返回的所有位置僅是估計值，我們和我們的服務提供者都不保證這些位置的準確性。提供的地點。
+\n\t• Igalia 及其貢獻者、授權人和合作夥伴致力於提供最準確和最新的服務。然而，我們不能保證這些資訊是全面且無錯誤的。例如，安全瀏覽服務可能無法識別一些有風險的網站，並且可能會錯誤地識別一些安全網站，而在位置感知服務中，我們的服務提供者返回的所有位置僅是估計值，我們和我們的服務提供者都不保證這些位置的準確性。
 \n
-\n\t•Igalia 可自行決定終止或變更服務。
+\n\t• Igalia 可自行決定終止或變更服務。
+\n
 \n\t• 歡迎您將這些服務與 Wolvic 的隨附版本一起使用，Igalia 授予您這樣做的權利。 Igalia 及其授權人保留服務中的所有其他權利。這些條款無意限制根據適用於 Wolvic 和 Wolvic 相應原始碼版本的開源許可授予的任何權利。
 \n
-\n\t• 服務以「現況」提供。 Igalia 及其貢獻者、授權人和經銷商不承擔任何明示或暗示的保證，包括但不限於服務適銷性和適合您的特定目的的保證。您承擔為您的目的選擇服務以及服務的品質和性能的全部風險。
+\n\t•服務以「現況」提供。 Igalia 及其貢獻者、授權人和經銷商不承擔任何明示或暗示的保證，包括但不限於服務適銷性和適合您的特定目的的保證。您承擔為您的目的選擇服務以及服務的品質和性能的全部風險。
 \n
 \n\t• 除法律要求外，Igalia、其貢獻者、許可方和分銷商對因使用Wolvic 和服務而產生的或以任何方式與之相關的任何間接、特殊、偶然、後果性、懲罰性或懲戒性損害不承擔責任。這些條款項下的集體責任將不超過 500 美元（五百美元）。某些司法管轄區不允許排除或限制某些損害，因此此排除和限制可能不適用於您。
 \n
@@ -1781,7 +1782,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
 \n
 \n\t•如果您不想使用一項或多項服務或上述條款不可接受，您可以停用該功能或服務。下面可以找到有關如何停用特定功能或服務的說明。其他功能和服務可以在應用程式首選項中停用。
 \n
-\n\t\t◦預設啟用安全瀏覽。不建議停用安全瀏覽功能，因為這可能會導致您造訪不安全的網站。如果您想完全停用該功能，請按照下列步驟操作：
+\n\t\t◦ 預設啟用安全瀏覽。不建議停用安全瀏覽功能，因為這可能會導致您造訪不安全的網站。如果您想完全停用該功能，請按照下列步驟操作：
 \n
 \n\t\t\t⁃ 在網址列, 輸入 about:config
 \n
@@ -1789,28 +1790,29 @@ the Select` button. When clicked it closes all the previously selected tabs -->
 \n
 \n\t\t\t⁃ 雙擊 browser.safebrowsing.malware.enabled preference
 \n
-\n\t\t\t⁃ 輸入 browser.safebrowsing.phishing.enabled
+\n\t\t\t⁃ 輸入browser.safebrowsing.phishing.enabled
 \n
 \n\t\t\t⁃ 雙擊 browser.safebrowsing.phishing.enabled preference
 \n
 \n\t\t\t⁃ 安全瀏覽現已停用
 \n
-\n\t\t◦ 位置感知瀏覽：始終是選擇加入。未經您的許可，不會發送任何位置資訊。如果您想完全停用該功能，請按照下列步驟操作：
-\n\t\t\t⁃在網址列, 輸入 about:config
+\n\t\t◦位置感知瀏覽：始終是選擇加入。未經您的許可，不會發送任何位置資訊。如果您想完全停用該功能，請按照下列步驟操作：
 \n
-\n\t\t\t⁃ 輸入geo.enabled
+\n\t\t\t⁃ 在網址列, 輸入 about:config
 \n
-\n\t\t\t⁃  雙擊  on the geo.enabled preference
+\n\t\t\t⁃ 輸入 geo.enabled
 \n
-\n\t\t\t⁃位置感知瀏覽 現已停用
+\n\t\t\t⁃ 雙擊 geo.enabled preference
+\n
+\n\t\t\t⁃ 位置感知瀏覽現已停用
 \n
 \n\t\t◦ Wolvic 中的增強追蹤保護會在您瀏覽時自動保護您的隱私。它會阻止在線追蹤您的追蹤器，以收集有關您的瀏覽習慣和興趣的信息，而不會破壞網站功能。它還包括針對有害腳本的保護，例如耗盡電池電量的惡意軟體。追蹤保護共有三種模式：標準、嚴格和關閉。如果您想將其關閉，請按照下列步驟操作：
 \n
 \n\t\t\t⁃ 前往 “Privacy &amp; Security” 設定。
 \n
-\n\t\t\t⁃選擇“關閉”單選按鈕。
+\n\t\t\t⁃ 選擇“關閉”單選按鈕。
 \n
-\n\t\t\t⁃ 增強追蹤保護現已停用。"</string>
+\n\t\t\t⁃ 增強追蹤保護現已停用。</string>
     <string name="privacy_policy_section_2">IGALIA 致力於遵守有關保護個人資料的法律規定：歐洲議會和理事會 2016 年 4 月 27 日頒布的關於在處理個人資料和處理方面保護自然人的法規 (EU) 2016/679關於此類資料的自由流動並廢除第95/46/EC 號指令（一般資料保護條例）以及12 月5 日關於資料保護和數位權利保障(LOPDGDD) 的第3/2018 號組織法。
 \nIGALIA 不會以可識別使用者身分的方式收集個人資料。因此，您可以使用該應用程式、查閱和瀏覽虛擬實境環境，而無需直接或間接透露您的身分或向 IGALIA 提供個人資料；因此，IGALIA 對在 WOLVIC 中輸入的任何資料不承擔任何責任。
 \nIGALIA 為使用本應用程式所取得的如下唯一資料和資訊在任何時候都不會單獨連結到用戶：
