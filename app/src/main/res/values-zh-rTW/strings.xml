@@ -355,7 +355,7 @@
     <string name="display_options_latin_auto_complete">拉丁字母鍵盤輸入自動完成</string>
     <!-- This string labels an On/Off switch in the 'Display Options' dialog
      and is used to customize if head lock should be enabled in the app. -->
-    <string name="display_options_head_lock">頭部鎖定</string>
+    <string name="display_options_head_lock">啟用頭部鎖定</string>
     <!-- This string labels an On/Off switch in the 'Display Options' dialog
          and is used to customize the windows distance. -->
     <string name="display_options_windows_distance">視窗距離</string>
@@ -590,7 +590,7 @@
     <!-- This string labels an Allow/Don't Allow switch in the Logins And Passwords settings dialog
      and is used to enable or disable login sync with Firefox Account. If disabled the logins
      won't be synced with the Firefox Account. -->
-    <string name="security_options_login_sync">使用 Firefox 帳號同步登入資訊</string>
+    <string name="security_options_login_sync">使用 Mozilla帳號同步登入資訊</string>
     <!-- This string labels a button in the Logins And Passwords settings dialog
      that when clicked opens the Mozilla Accounts settings panel. -->
     <string name="security_options_login_fxa">帳號…</string>
@@ -978,7 +978,7 @@
     <!-- This string is displayed is the "Sync" button in the history panel when the sync is in progress. -->
     <string name="fxa_syncing">同步中…</string>
     <!-- This string is displayed in the title of the FxA sign out dialog displayed when the user clicks on the Sign out button. -->
-    <string name="fxa_signout_confirmation_title">要登出 Firefox 帳號嗎？</string>
+    <string name="fxa_signout_confirmation_title">要登出 Mozilla 帳號嗎？</string>
     <!-- This string is displayed in the body of the FxA sign out dialog displayed when the user clicks on the Sign out button. -->
     <string name="fxa_signout_confirmation_body">登出後，就無法傳送分頁或收到來自其他裝置的分頁，也會停止同步書籤與上網紀錄。</string>
     <!-- This string is displayed in the checkbox text of the FxA sign out dialog displayed when the user clicks on the Sign out button.
@@ -1464,10 +1464,10 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="whats_new_title_1">登入即可傳送分頁</string>
     <!-- This string is displayed in the body of the what's new dialog that is displayed if the user has updated
          or updated the app and hasn't signed it yet. -->
-    <string name="whats_new_body_1">註冊或登入 Firefox Account，即可從桌面版或行動版 Firefox 將分頁傳送到 VR 眼鏡。</string>
+    <string name="whats_new_body_1">註冊或登入 Mozilla 帳戶，即可從桌面版或手機版 Firefox 將标签 傳送到耳機。</string>
     <!-- This string is displayed in the body of the what's new dialog that is displayed if the user has updated
          or updated the app and hasn't signed it yet. -->
-    <string name="whats_new_body_sub_1">Firefox Account 還可以用來在裝置間同步書籤與上網紀錄。</string>
+    <string name="whats_new_body_sub_1">Mozilla 帐户 還可以用來在裝置間同步書籤與上網紀錄。</string>
     <!-- This string is displayed a button of the what's new dialog that is displayed if the user has updated
          or updated the app and hasn't signed it yet. If clicked the user is redirected to the Mozilla Account sign-in page. -->
     <string name="whats_new_button_sign_in">登入</string>
@@ -1732,9 +1732,9 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="download_addon_install_blocked_body">允許在開發人員選項中繼續進行本機插件安裝。</string>
     <string name="external_open_uri_error_title">開啟外部應用程式時出錯</string>
     <string name="language_service_options_reset">重置語音搜尋服務設置</string>
-    <string name="deprecated_version_dialog_body">Wolvic 的本「App Lab」版本很快就會被刪除。
+    <string name="deprecated_version_dialog_body">Wolvic 的本「App Lab」版本將于2023 年 10 月底刪除。
 \n
-\n請從 Meta Store 安裝最新版本的 Wolvic。
+\n請從 Meta Quest Store 安裝最新版本的 Wolvic。
 \n
 \n重要提示：除非您使用同步，否則新的 Wolvic 應用程式將不會有您的書籤和選項卡。</string>
     <string name="external_open_uri_error_no_activity_body">找不到可以處理%1$s的應用程式</string>
@@ -1815,7 +1815,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
 \n\t• 為了捕獲語音並將其翻譯為文本，用戶的聲音數據透過用於此目的的 API 發送到負責每個平台的第三方公司擁有的伺服器：例如，在 Oculus 中，來自 Facebook 的一項服務將其發送到Oculus Voice SDK。上述資料在任何時候都不會被處理、存取或合併到 IGALIA 擁有的伺服器中。傳輸的資料將由擁有每個平台的第三方公司（以下簡稱「第三方」）獨家負責，這些公司可能位於歐盟之外，並受對用戶隱私保護較少的法律制度的約束。我們建議您在接受和使用這些外部平台的服務之前仔細閱讀其隱私權政策和使用條款。 IGALIA 對上述第三方的個人資料處理不直接或間接負責。
 \n\t• 地理位置資訊可以從瀏覽器獲取，而不是系統使用的資訊。然而，為此，您必須透過這方面的具體通知來設定您設備的位置權限，並且IGALIA 絕不會以任何方式將上述資訊與您作為已識別或可識別的人聯繫起來，儘管第三方在這方面提到了第三方。如果適用的話，上一點可以這樣做。我們建議您注意他們的法律條款。
 \n\t•IGALIA 不會以任何方式存取或儲存您造訪過的位址或 URL。
-\n\t• 可與雲端服務（例如 Firefox 帳戶或 Google 帳戶）整合以同步數據，例如您的瀏覽記錄或使用者書籤。在這種情況下，IGALIA 不會以任何方式存取或處理任何訊息，也不會透過 IGALIA 的伺服器。
+\n\t• 可與雲端服務（例如Mozilla 帳戶或 Google 帳戶）整合以同步數據，例如您的瀏覽記錄或使用者書籤。在這種情況下，IGALIA 不會以任何方式存取或處理任何訊息，也不會透過 IGALIA 的伺服器。
 \n
 \n我們再次提醒您，您透過此應用程式存取或使用的第三方平台可能會收集有關您的此或其他識別數據，無論是自願或非自願和/或有意或無意地填寫，這可能超出歐洲數據保護立法的範圍。因此，我們建議您自行了解並特別注意所述第三方的法律條款，例如以下內容：
 \n
