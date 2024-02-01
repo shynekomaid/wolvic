@@ -357,7 +357,7 @@
     <string name="display_options_latin_auto_complete">拉丁字母键盘输入自动补全</string>
     <!-- This string labels an On/Off switch in the 'Display Options' dialog
          and is used to customize if head lock should be enabled in the app. -->
-    <string name="display_options_head_lock">头部锁定</string>
+    <string name="display_options_head_lock">启用头部锁定</string>
     <!-- This string labels an On/Off switch in the 'Display Options' dialog
          and is used to customize the windows distance. -->
     <string name="display_options_windows_distance">窗口距离</string>
@@ -421,7 +421,7 @@
          for the virtual displays Dots Per Inch (DPI). -->
     <string name="developer_options_display_dpi">显示像素密度（DPI）：</string>
     <!-- This string is used to label the experimental features. -->
-    <string name="experimental_features">实验性功能</string>
+    <string name="experimental_features">试用功能</string>
     <!-- This string is used to label radio buttons for setting Multi-Sample Anti-Aliasing (MSAA) in
          VR Immersive Mode. -->
     <string name="developer_options_msaa">多重采样抗锯齿（MSAA）</string>
@@ -1465,7 +1465,7 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="whats_new_title_1">登录以发送标签页</string>
     <!-- This string is displayed in the body of the what's new dialog that is displayed if the user has updated
          or updated the app and hasn't signed it yet. -->
-    <string name="whats_new_body_1">创建或登录一个 Mozilla 账户，以便您在台式机、笔记本电脑、移动设备向头戴式设备上的 Firefox 发送标签页。</string>
+    <string name="whats_new_body_1">登录或创建一个新的 Mozilla 账户，以便您在台式机、笔记本电脑、移动设备向头戴式设备上的 Firefox 发送标签页。</string>
     <!-- This string is displayed in the body of the what's new dialog that is displayed if the user has updated
          or updated the app and hasn't signed it yet. -->
     <string name="whats_new_body_sub_1">Mozilla 账户还可让您在所有设备上同步书签和历史记录。</string>
@@ -1680,7 +1680,16 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <!-- These strings are the content of the Terms of Service. -->
     <string name="terms_service_title">Wolvic移动应用程序用户协议</string>
     <string name="terms_service_section_1">Wolvic 是免费的开源软件，由来自世界各地的数千名社区构建。您应该了解以下几点：
-\n\t• Wolvic 的某些功能利用基于网络的信息服务；但是，我们不能保证它们 100% 准确或没有错误。更多详细信息，包括有关如何禁用使用这些服务的功能的信息，可以在服务条款（如下）中找到。</string>
+\n
+\n\t• Wolvic 是根据 Mozilla 公共许可证的条款向您提供的。这意味着您可以使用、复制 Wolvic 并将其分发给其他人。也欢迎您根据需要修改 Wolvic 的源代码。 Mozilla 公共许可证还赋予您分发修改版本的权利。
+\n
+\n\t• 您未被授予 Igalia 或任何一方的任何商标权或商标许可，包括但不限于 Wolvic 名称或徽标。
+\n
+\n\t• Wolvic 中的某些功能（例如崩溃报告器）使您可以选择向 Igalia 提供反馈。选择提交反馈，即表示您授予 Igalia 使用反馈来改进其产品、在其网站上发布匿名反馈以及分发匿名反馈的权限。
+\n
+\n\t• Wolvic 隐私政策中描述了我们如何使用您通过 Wolvic 提交给 Igalia 的个人信息和反馈。
+\n
+\n\t• Wolvic 的一些功能利用基于网络的信息服务；但是，我们不能保证它们 100% 准确或没有错误。更多详细信息，包括有关如何禁用使用这些服务的功能的信息，可以在（如下）服务条款中找到。</string>
     <string name="terms_service_subtitle_2">Wolvic 基于网络的信息服务</string>
     <string name="terms_service_section_2">Wolvic按照下述条款使用基于网络信息的服务（ “服务”）为您提供Wolvic二进制版本的某些功能：
 \n
@@ -1743,17 +1752,17 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="privacy_policy_subtitle_2">数据保护</string>
     <string name="privacy_policy_section_2">IGALIA 致力于遵守有关保护个人数据的法律规定：欧洲议会和理事会 2016 年 4 月 27 日颁布的关于在处理个人数据和处理方面保护自然人的法规 (EU) 2016/679关于此类数据的自由流动并废除第 95/46/EC 号指令（一般数据保护条例）以及 12 月 5 日第 3/2018 号组织法，关于数据保护和数字权利保障 (LOPDGDD)。
 \n
-\n “个人数据”指任何与个人身份识别，提供直接或间接地追踪个人身份的相关信息，特别是身份信息，例如姓名、识别号码、位置数据等，或者结合其它与特定个人相关的可识别信息，例如上述人的身体、生理、遗传、精神、经济、文化或社会身份标识。 IGALIA不会以可识别用户的方式收集个人数据。因此，您可以在不透露身份的情况下，或直接或间接向IGALIA提供个人数据的情况下使用该应用程序，咨询和浏览虚拟现实环境；因此，IGALIA将不对任何输入WOLVIC的数据负责。
+\nIGALIA 不会以可识别用户身份的方式收集个人数据。因此，您可以使用该应用程序、查阅和浏览虚拟现实环境，而无需直接或间接透露您的身份或向 IGALIA 提供个人数据；因此，IGALIA 对在 WOLVIC 中输入的任何数据不承担任何责任。
 \nIGALIA从本应用程序的使用中获得的唯一数据和信息，在任何时候都不会与用户关联，这些数据和信息如下：
 \n
-\n\t• 分析性的、纯统计性的、非身份识别性的数据。 
+\n\t• 分析性的、纯统计性的、非身份识别性的数据。
 \n\t• 为了获取声音并将其译成文本，用户的声音数据将通过相关应用程序接口（API）发送到负责每个平台的第三方公司的服务器上：例如，Facebook旗下的Oculus，声音数据将被发送到Oculus Voice SDK。上述数据在任何时候都不会被处理、访问或纳入IGALIA服务器中。传送的数据将由拥有各平台的第三方公司（以下简称“第三方”）全权负责，这些公司可能位于欧盟以外，并受用户隐私保护程度较弱的法律制度约束。我们建议您在接受和使用这些外部平台的服务之前，仔细阅读其隐私政策和使用条款。IGALIA不会直接或间接对上述第三方的个人数据处理负责。 • 地理位置信息可能从浏览器中获得，而非系统所在的地理位置信息。然而，要获取地理位置信息，必须通过相关具体通知设置设备位置权限，IGALIA不会以任何方式将上述信息用以确定和识别您的身份，但上一点中所提及的第三方可能会进行相关操作。我们建议您关注第三方的法律条款。
-\n\t • IGALIA不会以任何方式访问或储存您访问过的地址或网络地址（URL）。 
+\n\t • IGALIA不会以任何方式访问或储存您访问过的地址或网络地址（URL）。
 \n\t• 如果使用云服务（如火狐账户或谷歌账户）集成同步您的浏览历史或用户书签等数据。在这种情况下，IGALIA不会以任何方式访问或处理任何信息，且该信息不会经过IGALIA服务器。
 \n
 \n我们再次提醒您，您通过此应用程序访问或使用的第三方平台可能会收集有关您的此或其他识别数据，无论是自愿或非自愿和/或有意或无意地填写，这可能超出欧洲数据保护立法的范围。因此，我们建议您自行了解并特别注意所述第三方的法律条款，例如以下内容：
 \n
-\n\tGoogle: https://policies.google.com/privacy
+\n\t• Google: https://policies.google.com/privac
 \n\t• Facebook: https://www.facebook.com/about/privacy/update
 \n\t• MeetKai: https://meetkai.com/privacy
 \n
@@ -1819,9 +1828,9 @@ the Select` button. When clicked it closes all the previously selected tabs -->
     <string name="security_options_permission_fine_location_warning">Wolvic 只可以获取您的大致位置。 您可在系统设置菜单更改设置。</string>
     <string name="upload_list_empty">无可上载文档</string>
     <string name="hamburger_menu_toggle_passthrough">通过</string>
-    <string name="deprecated_version_dialog_body">Wolvic 的“App Lab”版本将很快被删除。
+    <string name="deprecated_version_dialog_body">Wolvic 的“App Lab”版本将于2023年10月底删除。
 \n
-\n请安装 Meta 商店的Wolvic最新版本。
+\n请安装 Meta Quest 商店的Wolvic最新版本。
 \n
 \n重要提示：除非您用同步，新版 Wolvic应用不会有你的书签和标签页。</string>
     <string name="deprecated_version_dialog_title">支持即将结束</string>
